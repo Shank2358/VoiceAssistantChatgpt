@@ -4,6 +4,13 @@
 -   python3.10以上版本
 -   申请 [OpenAI API Key](https://platform.openai.com/account/api-keys) 
 -   能够连接上chatgptapi的网络
+
+
+
+**[广告] 免费 OpenAI API Key**  
+<img src=https://user-images.githubusercontent.com/50035229/229976556-99e8ac26-c8c3-4f56-902d-a52a7f2e50d5.png width=300px />  
+
+[获取免费的OpenAI API Key](https://freeopenai.xyz/) 
 # 安装
 ## Windows Installation
 ```powershell
