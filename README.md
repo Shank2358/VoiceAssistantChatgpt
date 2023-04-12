@@ -31,7 +31,7 @@ python chatgpt.py
 
 如果你有好的意见和建议，以及bug汇报，欢迎提出和Pull request。
 # 更新日志
-4.12 程序上传
+2023.4.12 程序上传
 
 # 参考文档
 [ChatGPT-3.5-API](https://github.com/XksA-me/ChatGPT-3.5-API)
