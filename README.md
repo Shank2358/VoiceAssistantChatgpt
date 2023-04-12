@@ -1,0 +1,2 @@
+# VoiceAssistantChatgpt
+一个语音交互输入的调用Chatgpt项目，你的python助理
