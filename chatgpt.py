@@ -1,7 +1,7 @@
 import openai
 import json
 import os
-from openai.error import AuthenticationError,InvalidRequestError,APIConnectionError
+from openai.error import AuthenticationError,InvalidRequestError,APIConnectionError,RateLimitError
 from record import Recorder
 from voice import Voice
 
@@ -31,6 +31,9 @@ def get_api_key():
             print("API 密钥无效，请重新输入")
         except APIConnectionError:
             print("无法连接，请检查网络")
+        except RateLimitError:
+            print("密钥已经超出使用限制，请更换")
+
 
         # 更新 API 密钥并写入文件
         openai_key = {"api": input("请输入API密钥：")}
