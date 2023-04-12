@@ -27,6 +27,8 @@ pip install -r requirements.txt
 .\venv\Scripts\activate
 python chatgpt.py
 ```
+或者run_chatgptAssistant.bat
+
 # 使用指南
 第一次登陆要求你输入api密钥，之后密钥会保存在openaikey.json中，如果需要修改在这里修改。每次运行程序时都会检查你的密钥是否能够连接上网络。
 
