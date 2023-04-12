@@ -29,6 +29,9 @@ python chatgpt.py
 
 语音输入设置的是3秒内没有语音输入就停止程序，没有重新唤醒的能力。之后会继续完善。打字机效果在cmd中没有效果。使用pycharm或者Vscode可以预览到效果。
 
-如果你有好的意见和建议，欢迎提出和Pull request。
+如果你有好的意见和建议，以及bug汇报，欢迎提出和Pull request。
 # 更新日志
 4.12 程序上传
+
+# 参考文档
+[ChatGPT-3.5-API] https://github.com/XksA-me/
