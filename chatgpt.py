@@ -131,29 +131,26 @@ def main():
                 break
             output = Voice.transcribe_audio()
             if output == "停止对话" or output == "停止對話":
+                chat.writeTojson()
                 print("*******保存退出*******")
                 break
-            q = output
-            print(f"\n【{chat.user}】" + output)
-
-            #q = input(f"\n【{chat.user}】")
-            # 逻辑判断
-            if q == "q":
-                print("*********保存退出**********")
-                # 写入之前信息
-                chat.writeTojson()
-                break
-            elif q == "r":
+            if output == "清除记录" or output == "清除記錄":
                 chat.clear_history()
                 print("*******历史记录已清除*******")
                 user = input("请输入用户名称: ")
                 chat = ChatGPT(user)
                 continue
 
+            print(f"\n【{chat.user}】" + output)
+
+            #q = input(f"\n【{chat.user}】")
+
             # 提问，聊天记录更新
+            q = output
             chat.messages.append({"role": "user", "content": q})
             answer = chat.ask_gpt()
             chat.messages.append({"role": "assistant", "content": answer})
+            chat.writeTojson()
         except InvalidRequestError:
             print("总对话字数超出限制，请重试")
             #超出限制后会清掉聊天记录，忽略本次，并重新读取前15条聊天记录
