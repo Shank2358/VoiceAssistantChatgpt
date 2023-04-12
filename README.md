@@ -34,4 +34,4 @@ python chatgpt.py
 4.12 程序上传
 
 # 参考文档
-[ChatGPT-3.5-API] (https://github.com/XksA-me/ChatGPT-3.5-API)
+[ChatGPT-3.5-API](https://github.com/XksA-me/ChatGPT-3.5-API)
