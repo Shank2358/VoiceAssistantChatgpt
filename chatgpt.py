@@ -162,7 +162,7 @@ def main():
         except APIConnectionError:
             print("无法连接，请检查网络")
         except RateLimitError:
-            print("密钥已经超出使用限制，请更换")
+            print("密钥已经超出使用限制，请稍后再试")
 
 
 if __name__ == '__main__':
