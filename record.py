@@ -87,7 +87,7 @@ class Recorder:
 
                         # 将音量值加入列表
                         volume_list.append(volume)
-                        print(volume_list)
+                        #print(volume_list)
 
                         # 如果音量低于阈值，则停止录音
                         if len(volume_list) >= 6 and all(v < 200 for v in volume_list[-6:]):
